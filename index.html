@@ -3,70 +3,67 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    
-    <script
-        src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-
-    <title>SGP: Student Growth Percentiles &amp; Percentile Growth Trajectories/Projections</title>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>SGP: Student Growth Percentiles by CenterForAssessment</title>
   </head>
 
   <body>
-    <header>
+    <div id="container">
       <div class="inner">
-        <h1>SGP: Student Growth Percentiles</h1>
-        <h2>An R Package for the Calculation and Visualization of Student Growth Percentiles &amp; Percentile Growth Trajectories</h2>
-        <a href="https://github.com/dbetebenner/SGP" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>The SGP Package </h1>
+        <header>
+          <h1>SGP: Student Growth Percentiles</h1>
+          <h2>An R Package for the Calculation and Visualization of Student Growth Percentiles &amp; Percentile Growth Trajectories</h2>
+        </header>
 
-<h2>Student Growth Percentiles &amp; Percentile Growth Trajectories/Projections</h2>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/CenterForAssessment/SGP/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/CenterForAssessment/SGP/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/CenterForAssessment/SGP" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-<p>The <strong>SGP</strong> Package (SGP, 2013) is an open source software package built for the 
-    open source <strong>R</strong> software environment (R Development Core Team, 2013). The classes, 
-    functions and data within the <strong>SGP</strong> package are used to calculate student growth percentiles 
-    and percentile growth projections/trajectories using large scale, longitudinal assessment data. The methodology 
-    uses quantile regression to estimate the conditional density associated associated with each student's achievement history. 
-    Percentile growth projections/trajectories are calculated using the coefficient matrices derived from the quantile regression 
-    analyses and specify the percentile growth required for students to reach future achievement targets.</p>
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a name="the-sgp-package-" class="anchor" href="#the-sgp-package-"><span class="octicon octicon-link"></span></a>The SGP Package </h1>
+
+<h2>
+<a name="student-growth-percentiles--percentile-growth-trajectoriesprojections" class="anchor" href="#student-growth-percentiles--percentile-growth-trajectoriesprojections"><span class="octicon octicon-link"></span></a>Student Growth Percentiles &amp; Percentile Growth Trajectories/Projections</h2>
+
+<p>The <strong>SGP</strong> Package (SGP, 2012) is an open source package built for the open source <strong>R</strong> software environment (R Development Core Team, 2012). The classes, functions and data within the <strong>SGP</strong> package are used to calculate student growth percentiles and percentile growth projections/trajectories using large scale, longitudinal assessment data. The methodology uses quantile regression to estimate the conditional density associated associated with each student's achievement history. Percentile growth projections/trajectories are calculated using the coefficient matrices derived from the quantile regression analyses and specify the percentile growth required for students to reach future achievement targets.</p>
 
 <ul>
-<li>Web site: <a href="http://SchoolView.github.com/SGP/" target="_blank">http://SchoolView.github.com/SGP/</a>
+<li>Web site: <a href="http://CenterForAssessment.github.com/SGP/">http://CenterForAssessment.github.com/SGP/</a>
 </li>
-<li>CRAN Web site: <a href="http://cran.r-project.org/web/packages/SGP/" target="_blank">http://cran.r-project.org/web/packages/SGP/</a>
+<li>CRAN Web site: <a href="http://cran.r-project.org/web/packages/SGP/">http://cran.r-project.org/web/packages/SGP/</a>
 </li>
-</ul><h2>Install stable CRAN release</h2>
+</ul><h2>
+<a name="install-stable-cran-release" class="anchor" href="#install-stable-cran-release"><span class="octicon octicon-link"></span></a>Install stable CRAN release</h2>
 
-<div class="highlight"><pre><span class="nv">install.packages</span><span class="gs">(</span><span class="s">"SGP"</span><span class="gs">)</span>
-<span class="nv">require</span><span class="gs">(</span>SGP<span class="gs">)</span>
+<div class="highlight highlight-R"><pre><span class="c">install.packages("SGP")</span>
+<span class="c">require(SGP)</span>
 </pre></div>
 
-<h2>Install latest development release from Github</h2>
+<h2>
+<a name="install-latest-development-release-from-github" class="anchor" href="#install-latest-development-release-from-github"><span class="octicon octicon-link"></span></a>Install latest development release from Github</h2>
 
-<div class="highlight"><pre><span class="nv">install.packages</span><span class="gs">(</span><span class="s">"devtools"</span><span class="gs">)</span>
-<span class="nv">require</span><span class="gs">(</span>devtools<span class="gs">)</span>
-<span class="nv">install_github</span><span class="gs">(</span><span class="s">"SGP"</span><span class="nv">,</span> <span class="s">"SchoolView"</span><span class="gs">)</span>
-<span class="nv">require</span><span class="gs">(</span>SGP<span class="gs">)</span>
+<div class="highlight highlight-R"><pre><span class="c">install.packages("devtools")</span>
+<span class="c">require(devtools)</span>
+<span class="c">install_github("SGP", "CenterForAssessment")</span>
+<span class="c">require(SGP)</span>
 </pre></div>
 
-<p>To install from Github you might need: Windows: Rtools (<a href="http://cran.r-project.org/bin/windows/Rtools/" target="_blank">http://cran.r-project.org/bin/windows/Rtools/</a>), OS X: xcode (from the app store),
+<p>To install from Github you might need: Windows: Rtools (<a href="http://cran.r-project.org/bin/windows/Rtools/">http://cran.r-project.org/bin/windows/Rtools/</a>), OS X: xcode (from the app store),
 Linux: apt-get install r-base-dev (or similar).</p>
 
-
-<h2>Getting Started</h2>            
-            
-<p>Analysis of data utilizing the <strong>SGP</strong> methodology requires, broadly, 
-    two steps: Data Preparation and Data Analysis with these two steps consisting of several substeps:</p>
+<p>Analysis of data utilizing the <strong>SGP</strong> methodology requires, broadly, two steps: Data Preparation and Data Analysis with these two steps consisting of several substeps:</p>
 
 <ul>
 <li>Data Preparation
@@ -78,27 +75,28 @@ Linux: apt-get install r-base-dev (or similar).</p>
 <li>Data Analysis
 
 <ul>
-<li><a href="https://github.com/SchoolView/SGP/blob/master/R/prepareSGP.R" target="_blank">prepareSGP</a></li>
-<li><a href="https://github.com/SchoolView/SGP/blob/master/R/analyzeSGP.R" target="_blank">analyzeSGP</a></li>
-<li><a href="https://github.com/SchoolView/SGP/blob/master/R/combineSGP.R" target="_blank">combineSGP</a></li>
-<li><a href="https://github.com/SchoolView/SGP/blob/master/R/summarizeSGP.R" target="_blank">summarizeSGP</a></li>
-<li><a href="https://github.com/SchoolView/SGP/blob/master/R/visualizeSGP.R" target="_blank">visualizeSGP</a></li>
-<li><a href="https://github.com/SchoolView/SGP/blob/master/R/outputSGP.R" target="_blank">outputSGP</a></li>
+<li>prepareSGP</li>
+<li>analyzeSGP</li>
+<li>combineSGP</li>
+<li>summarizeSGP</li>
+<li>visualizeSGP</li>
+<li>outputSGP</li>
 </ul>
 </li>
-</ul><h1>Data Preparation</h1>
+</ul><h1>
+<a name="data-preparation" class="anchor" href="#data-preparation"><span class="octicon octicon-link"></span></a>Data Preparation</h1>
 
 <p>The following provides thorough <strong>SGP</strong> data formatting/preparation specifications for
-utilizing the utility function of the package (SGP:2013). To help
-illustrate these specifications there is an embedded data set, 
-<a href="https://github.com/SchoolView/SGPstateData" target="_blank">SGPstateData</a>, within
+utilizing the utility function of the package (SGP:2012). To help
+illustrate these specifications there is an embedded data set, , within
 the package. The development team uses this data set frequently to test
 new features included in the package. Ensuring your data is set up in
 the proper format will minimize later efforts to run analyses. The goal,
 if you supply properly formatted data, is to make generation of student
 growth data and associated visualizations as easy as <em>abc</em>.</p>
 
-<h2>Data must be in long format</h2>
+<h2>
+<a name="data-must-be-in-long-format" class="anchor" href="#data-must-be-in-long-format"><span class="octicon octicon-link"></span></a>Data must be in long format</h2>
 
 <p>The first and most fundamental requirement for the data is that it must
 be in long, as opposed to wide, format. For our purposes, this means
@@ -112,35 +110,34 @@ would contain all available information for a single student. For
 example, here are the first four rows (only the first 8 columns) of the
 sample data:</p>
 
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nv">sgpData_LONG</span><span class="gs">[</span><span class="sx">1:4</span><span class="nv">,1:7</span><span class="gs">]</span>
-<span class="nv">ID</span> <span class="nv">LAST_NAME</span> <span class="nv">FIRST_NAME</span> <span class="nv">CONTENT_AREA</span>   <span class="nv">YEAR</span> <span class="nv">GRADE</span> <span class="nv">SCALE_SCORE</span>
-<span class="m">1</span> <span class="m">1000079</span>   <span class="nv">Nixon</span>  <span class="nv">Daniela</span> <span class="nv">MATHEMATICS</span> <span class="m">2006</span><span class="nv">_2007</span>   <span class="m">8</span>     <span class="m">463</span>
-<span class="m">2</span> <span class="m">1000079</span>   <span class="nv">Nixon</span>  <span class="nv">Daniela</span> <span class="nv">MATHEMATICS</span> <span class="m">2007</span><span class="nv">_2008</span>   <span class="m">9</span>     <span class="m">519</span>
-<span class="m">3</span> <span class="m">1000079</span>   <span class="nv">Nixon</span>  <span class="nv">Daniela</span>   <span class="nv">READING</span> <span class="m">2006</span><span class="nv">_2007</span>   <span class="m">8</span>     <span class="m">587</span>
-<span class="m">4</span> <span class="m">1000079</span>   <span class="nv">Nixon</span>  <span class="nv">Daniela</span>   <span class="nv">READING</span> <span class="m">2007</span><span class="nv">_2008</span>   <span class="m">9</span>     <span class="m">614</span>
+<div class="highlight highlight-R"><pre><span class="c">&gt; sgpData_LONG[1:4,1:7]</span>
+<span class="c">ID LAST_NAME FIRST_NAME CONTENT_AREA   YEAR GRADE SCALE_SCORE</span>
+<span class="c">1 1000079   Nixon  Daniela MATHEMATICS 2006_2007   8     463</span>
+<span class="c">2 1000079   Nixon  Daniela MATHEMATICS 2007_2008   9     519</span>
+<span class="c">3 1000079   Nixon  Daniela   READING 2006_2007   8     587</span>
+<span class="c">4 1000079   Nixon  Daniela   READING 2007_2008   9     614</span>
 </pre></div>
 
 <p>Notice that the same student is in each row, but that the rows represent
 different grades and content area combinations. This is what is meant by <em>long</em> formatted data.</p>
 
-<h2>Required Variables</h2>
+<h2>
+<a name="required-variables" class="anchor" href="#required-variables"><span class="octicon octicon-link"></span></a>Required Variables</h2>
 
-<p>The following list gives the columns that are required for the
+<p>The following list gives the columns that are requires for the
 calculation of Student Growth Percentiles and how they should be
-formatted (if applicable). The user is not required to use the same naming 
-conventions as outlined here. A variable name lookup
-table discussed in the next section can be provided to allow user names to be 
-translated back and for to <strong>SGP</strong> names.</p>
+formatted (if applicable).</p>
 
 <ul>
-<li><p><code>ID</code> This field contains the unique student identifier. Values will be set to
+<li><p><code>ID</code> This column contains the unique student identifiers. Values will be set to
 class <em>character</em>.</p></li>
 <li><p><code>CONTENT_AREA</code> This column describes the content area for a given
 row. Most datasets would presumably contain <em>MATHEMATICS</em> and
-<em>READING</em>, but other values are possible. If your analyses uses the embedded meta-data
-<a href="https://github.com/SchoolView/SGPstateData" target="_blank">SGPstateData</a>, then the values of 
-<code>CONTENT_AREA</code> must be capitalized and match the states’ assessment information contained
-in <strong>SGPstateData</strong>. These values should be of class <em>character</em>.</p></li>
+<em>READING</em>, but other values are possible. These values must be
+capitalized and match the states’ assessment information contained
+in the <strong>SGPstateData</strong> object that comes embedded within the <strong>SGP</strong> package.
+Please contact <a href="https://github.com/dbetebenner" class="user-mention">@dbetebenner</a> to have assessment data added to this
+object. These values should be of class <em>character</em>.</p></li>
 <li><p><code>YEAR</code> This column gives either the academic year (e.g., <em>2006_2007</em>
 as in the sample data) or the year in which the assessment took
 place (e.g., <em>2007</em>). If the latter form is used, the class of this
@@ -155,7 +152,8 @@ included in subsequent analyses (value set to <em>VALID_CASE</em>) and
 those that should not be included (value set to <em>INVALID_CASE</em>.
 Duplicate cases are often left in the data and flagged as an
 <em>INVALID_CASE</em>.</p></li>
-</ul><h2>Secondary Columns</h2>
+</ul><h2>
+<a name="secondary-columns" class="anchor" href="#secondary-columns"><span class="octicon octicon-link"></span></a>Secondary Columns</h2>
 
 <p>Although these columns are not required for Growth Percentile analyses,
 they are required for Growth to Standard analyses, and/or the
@@ -201,22 +199,17 @@ these two...</p></li>
 </ul><p>A number of other demographic variables can be provided when creating
 summaries.</p>
 
-<h2>Variable Name Lookup Table</h2>
+<h2>
+<a name="variable-name-lookup-table" class="anchor" href="#variable-name-lookup-table"><span class="octicon octicon-link"></span></a>Variable Name Lookup Table</h2>
 
-<p>The <strong>SGP</strong> package utilizes a variable name lookup table to carry out automated analyses.
-Please contact <a href="https://github.com/dbetebenner" class="user-mention">@dbetebenner</a> to have assessment data added to this
-object.
-    
-If a user does not wish to rename the columns in their data to match the
-conventions used in the <strong>SGP</strong> package listed above, the
+<p>If a user does not wish to rename the columns in their data to match the
+conventions used in the <code>SGP</code> package listed above, the
 <code>Variable_Lookup_Table</code> option can be used. The user must supply an
 appropriate list of variable names in the <code>var.names</code> argument of the
-<a href="https://github.com/SchoolView/SGP/blob/master/R/prepareSGP.R" target="_blank">prepareSGP</a>
-function. For example, if a state has a unique student
+<code>prepareSGP</code> function. For example, if a state has a unique student
 identifier named ``My_Student_ID" and an assessment subject variable
 named ``My_Subject" (all other variable names match), an example call
-to <a href="https://github.com/SchoolView/SGP/blob/master/R/prepareSGP.R" target="_blank">prepareSGP</a>
-would include this argument:</p>
+to <code>prepareSGP</code> would include this argument:</p>
 
 <pre><code>My_State_Data &lt;- prepareSGP(..., 
    var.names=list(ID="MyStudent_ID", CONTENT_AREA="My_Subject"))
@@ -226,54 +219,36 @@ would include this argument:</p>
 match the conventions, as well as all secondary columns needed for
 summarization and reporting.</p>
 
-<h2>Data Analysis</h2>
+<h2>
+<a name="data-analysis" class="anchor" href="#data-analysis"><span class="octicon octicon-link"></span></a>Data Analysis</h2>
 
 <p>Once a dataset is properly formatted, a comprehensive analysis can be
-conducted using <a href="https://github.com/SchoolView/SGP/blob/master/R/abcSGP.R" target="_blank">abcSGP</a>. 
-An example of the call using the sample data is below.</p>
+conducted using <strong>abcSGP</strong>. An example of the call using the sample data
+is below.</p>
 
 <pre><code>Demonstration_SGP &lt;- abcSGP(sgpData_LONG)
 </code></pre>
 
-<p>
-    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-            </p>
-            
-<p>This call returns an object of class <strong>SGP</strong> named <code>Demonstration_SGP</code> object which contains 
-student growth percentiles and other information, but it also produces goodness of fit and visualization folders containing files on those two topics.
-The function accepts multiple arguments detailed in the </p>
+<p>This call returns an object of class <em>SGP</em> named <code>Demonstration_SGP</code> object which contains student growth percentiles and other information, but it also produces goodness of fit and visualization folders containing files on those two topics.
+The function accepts multiple arguments detailed in the 
+<a href="https://github.com/dbetebenner/SGP/blob/master/man/abcSGP.Rd">documentation</a>.</p>
 
-            
-            
-<h2>Results</h2>            
-            <a href="images/MATHEMATICS_GOODNESS_OF_FIT/gofSGP_Grade_4.png" target="_blank"><img alt="Goodness of Fit: Mathematics, Grade 4" src="images/MATHEMATICS_GOODNESS_OF_FIT/gofSGP_Grade_4_SMALL.png"/></a>
+<h2>
+<a name="bibliography" class="anchor" href="#bibliography"><span class="octicon octicon-link"></span></a>Bibliography</h2>
 
-<h2>Bibliography</h2>
+<p>Betebenner, D. W., Iwaarden, A. V., Domingue, B., and Shang, Y. (2014). SGP: An R Package for the Calculation and Visualization of Student Growth Percentiles &amp; Percentile Growth Trajectories. Version 1.2-6.0</p>
 
-<p>Betebenner, D. W., VanIwaarden, A., and Domingue, B. (2013). SGP: An R Package for the Calculation and Visualization of Student Growth Percentiles &amp; Percentile Growth Trajectories.</p>
-
-<p>R Development Core Team (2013). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.
+<p>R Development Core Team (2014). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.
 3-900051-07-0.</p>
         </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/dbetebenner/SGP/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/dbetebenner/SGP/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+        <footer>
+          SGP: Student Growth Percentiles is maintained by <a href="https://github.com/CenterForAssessment">CenterForAssessment</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
 
-          <p class="repo-owner"><a href="https://github.com/dbetebenner/SGP"></a> is maintained by <a href="https://github.com/dbetebenner">dbetebenner</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
+        
       </div>
     </div>
-
-  
   </body>
 </html>
