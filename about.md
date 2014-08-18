@@ -8,6 +8,7 @@ The **SGP** Package (Betebenner, VanIwaarden, Domingue, Shang, 2014) is an open 
 
 * Web site: [sgp.io](http://sgp.io)
 * CRAN Web site: http://cran.r-project.org/web/packages/SGP/
+* GitHub repository: https://github.com/CenterForAssessment/SGP
 
 ### Team Members
 
