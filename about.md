@@ -3,28 +3,57 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
 
-There are currently two themes built on Poole:
+### An R Package for the calculation of student growth percentiles and percentile growth trajectories/projections
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+The **SGP** Package (Betebenner, VanIwaarden, Domingue, Shang, 2014) is an open source package built for the open source **R** software environment (R Development Core Team, 2014). The classes, functions and data within the **SGP** package are used to calculate student growth percentiles and percentile growth projections/trajectories using large scale, longitudinal assessment data. The methodology uses quantile regression to estimate the conditional density associated associated with each student's achievement history. Percentile growth projections/trajectories are calculated using the coefficient matrices derived from the quantile regression analyses and specify the percentile growth required for students to reach future achievement targets.
 
-## Setup
+* Web site: [sgp.io](http://sgp.io)
+* CRAN Web site: http://cran.r-project.org/web/packages/SGP/
 
-Some fun facts about the setup of this project include:
+### Team Members
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.org), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+The **SGP** Package is crafted with :heart: by:
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+* [Damian Betebenner](https://github.com/dbetebenner)
+* [Adam VanIwaarden](https://github.com/adamvi)
+* [Ben Domingue](https://github.com/ben-domingue)
+* [Yi Shang](https://github.com/shangyi)
 
-Thanks for reading!
+We love feedback and are happy to answer questions.
+
+
+### Install the latest stable release from [CRAN](http://cran.r-project.org/package=SGP)
+
+```S
+install.packages("SGP")
+require(SGP)
+```
+
+
+### Install latest development release from [Github](https://github.com/CenterForAssessment/SGP/) :octocat:
+
+```S
+install.packages("devtools")
+require(devtools)
+install_github("SGP", "CenterForAssessment")
+require(SGP)
+```
+
+To install from Github you might need: Windows: Rtools (http://cran.r-project.org/bin/windows/Rtools/), OS X: xcode (from the app store),
+Linux: apt-get install r-base-dev (or similar).
+
+
+### To use the SGP Package
+
+The [SGP Package Wiki](https://github.com/CenterForAssessment/SGP/wiki/Home) contains instructions on how to prepare data and run SGP analyses.
+
+
+### Bibliography
+
+Betebenner, D. W., VanIwaarden, A., Domingue, B., and Shang, Y. (2014). SGP: An R Package for the Calculation and Visualization of Student Growth Percentiles & Percentile Growth Trajectories.
+
+R Development Core Team (2014). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.
+3-900051-07-0.
