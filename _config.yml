@@ -24,7 +24,7 @@ paginate:         1
 version:          1.3
 
 github:
-  repo:           https://github.com/dbetebenner
+  repo:           https://github.com/dbetebenner/SGP
 
 gems:
    - jekyll-redirect-from
