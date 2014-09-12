@@ -18,10 +18,7 @@ author:
   name:           'Damian Betebenner'
   url:            https://twitter.com/dbetebenner
 
-paginate:         1
-
-# Custom vars
-version:          1.3
+paginate:         2
 
 github:
   repo:           https://github.com/dbetebenner/SGP
