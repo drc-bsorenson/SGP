@@ -11,7 +11,7 @@ permalink:        pretty
 # Setup
 title:            SGP
 tagline:          'Student Growth Percentiles'
-url:              http://sgp.io
+url:              https://sgp.io
 shorturl:         sgp.io
 
 author:
@@ -31,3 +31,5 @@ gems:
 # This is the list of pages to incldue in the header of the website.
 pages_list:       {'About':'/about','Archive':'/archive','Feed':'/atom.xml'}
 
+url: https://sgp.io
+enforce_ssl: sgp.io
