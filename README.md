@@ -1,1 +1,1 @@
-Welcome to the GitHub repository for the Jekyll based website [sgp.io](http://www.sgp.io) 
+Welcome to the GitHub repository for the Jekyll based website [sgp.io](https://www.sgp.io) 
