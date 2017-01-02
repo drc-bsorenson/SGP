@@ -8,8 +8,8 @@ title: About SGP
 The **SGP** Package (Betebenner, VanIwaarden, Domingue, Shang, 2015) is an open source package built for the open source **R** software environment (R Development Core Team, 2015). 
 The classes, functions and data within the **SGP** package are used to calculate student growth percentiles and percentile growth trajectories/projections using large scale, longitudinal assessment data. The methodology uses quantile regression to estimate the conditional density associated associated with each student's achievement history. Percentile growth projections/trajectories are calculated using the coefficient matrices derived from the quantile regression analyses and specify the percentile growth required for students to reach future achievement targets.
 
-* [sgp.io](http://sgp.io)
-* [CRAN Repo](http://cran.r-project.org/web/packages/SGP/)
+* [sgp.io](https://sgp.io)
+* [CRAN Repo](https://cran.R-project.org/package=SGP)
 * [GitHub Repo](https://github.com/CenterForAssessment/SGP)
 
 ### Team Members
@@ -24,7 +24,7 @@ The **SGP** Package is crafted with :heart: by:
 We love feedback and are happy to answer questions.
 
 
-### Install the latest stable release from [CRAN](http://cran.r-project.org/package=SGP)
+### Install the latest stable release from [CRAN](https://cran.r-project.org/package=SGP)
 
 ```R
 install.packages("SGP")
@@ -52,7 +52,7 @@ The [SGP Package Wiki](https://github.com/CenterForAssessment/SGP/wiki/Home) con
 
 ### Bibliography
 
-Betebenner, D. W., VanIwaarden, A., Domingue, B., and Shang, Y. (2015). SGP: Student Growth Percentiles & Percentile Growth Trajectories.
+Betebenner, D. W., VanIwaarden, A., Domingue, B., and Shang, Y. (2017). SGP: Student Growth Percentiles & Percentile Growth Trajectories.
 
-R Development Core Team (2015). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.
+R Development Core Team (2017). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.
 3-900051-07-0.
